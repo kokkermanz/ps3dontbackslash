@@ -59,7 +59,7 @@ RPCS3:
 - If it says "Running Active" the connection is established.
 - Go back to the Input viewer tab and select a controller skin for the desired player, and start the viewer.
 
-(Note: if doing this over the network on a real PS3 and not RPCS3, the ip must be changed from 0.0.0.0 to the IPV4 of the PS3)
+(Note: if doing this over the network on a real PS3 and not RPCS3, the ip must be changed from 0.0.0.0 to the IPV4 of the PS3 in the app, and to the IPV4 of your PC in the game)
 ## Credits
 
 - [@ennuo](https://github.com/ennuo) providing the in game UDP server/listener as well as sharing much forbidden knowledge.
