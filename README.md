@@ -34,22 +34,22 @@ PC:
             └── skin.png
     ```
 ***
-\
+/
 Game files:
-- Place the `boot.map` file in `\dev_hdd0\game\*TITLEID*\USRDIR\gamedata\alear\boot.map`
-- Place the `patch9.farc` file in `\dev_hdd0\game\*TITLEID*\USRDIR\patch9.farc`
+- Place the `boot.map` file in `/dev_hdd0/game/*TITLEID*/USRDIR/gamedata/alear/boot.map`
+- Place the `patch9.farc` file in `/dev_hdd0/game/*TITLEID*/USRDIR/patch9.farc`
 ***
-\
+/
 PS3:
-- Copy over the `EBOOT.BIN` file from `\dev_hdd0\game\*TITLEID*\USRDIR\EBOOT.BIN` to your computer, use RPCS3 or TrueAncestor Resigner to decrypt it to an `ELF` file.
+- Copy over the `EBOOT.BIN` file from `/dev_hdd0/game/*TITLEID*/USRDIR/EBOOT.BIN` to your computer, use RPCS3 or TrueAncestor Resigner to decrypt it to an `ELF` file.
 - Use the `Patch .ELF file` option in the LBP-SRUtil app, to apply the patch.
 - Use TrueAncestor Resigner to resign it once more to a .BIN file.
-- Place the output .BIN file back into `\dev_hdd0\game\*TITLEID*\USRDIR\EBOOT.BIN`
+- Place the output .BIN file back into `/dev_hdd0/game/*TITLEID*/USRDIR/EBOOT.BIN`
 - **Highly recommend keeping a backup of the original .BIN file**
 ***
-\
+/
 RPCS3:
-- Place the `imported_patch.yml` file in `\RPCS3\patches\imported_patch.yml` or merge it with any pre existing ones.
+- Place the `imported_patch.yml` file in `/RPCS3/patches/imported_patch.yml` or merge it with any pre existing ones.
 - In RPCS3 navigate to `Manage>Game Patches` and in the Patch Manager go to `LittleBigPlanet>*TITLEID* v.01.30`, check "Alear (Minimal)" then apply and save.
 ## Usage
 - Launch LBP1, once in game press start and enter the settings menu, a new settings page should be present at the top, if the installation was done correctly. **"SRUtil Settings"**
