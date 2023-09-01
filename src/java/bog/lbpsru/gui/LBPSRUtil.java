@@ -93,16 +93,22 @@ public class LBPSRUtil {
                     path = path.substring(0, path.lastIndexOf("/") + 1);
 
                     File controllerskins = new File(path + "controllerskins/");
-
                     Main.skins.clear();
-
-                    for(File file : Objects.requireNonNull(controllerskins.listFiles()))
-                        Main.skins.add(SkinRenderer.readSkin(file.getPath(), file.getName()));
-
                     player1Combo.removeAllItems();
                     player2Combo.removeAllItems();
                     player3Combo.removeAllItems();
                     player4Combo.removeAllItems();
+
+                    File[] files = controllerskins.listFiles();
+
+                    if(files == null)
+                    {
+                        JOptionPane.showMessageDialog(mainForm, "Controllerskins folder is missing.", "ERROR!", JOptionPane.ERROR_MESSAGE);
+                        return;
+                    }
+
+                    for(File file : Objects.requireNonNull(files))
+                        Main.skins.add(SkinRenderer.readSkin(file.getPath(), file.getName()));
 
                     for(Skin skin : Main.skins)
                     {
